@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>blog</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+        	<servlet-name>Login</servlet-name>
+        	<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>Login</servlet-name>
+        	<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        	<servlet-name>Create Account</servlet-name>
+        	<servlet-class>CreateAccount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>Create Account</servlet-name>
+        	<url-pattern>/CreateAccount</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        	<servlet-name>Create Blog</servlet-name>
+        	<servlet-class>CreateBlog</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>Create Blog</servlet-name>
+        	<url-pattern>/CreateBlog</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        	<servlet-name>Create Comment</servlet-name>
+        	<servlet-class>CreateComment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>Create Comment</servlet-name>
+        	<url-pattern>/CreateComment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        	<servlet-name>Edit Account</servlet-name>
+        	<servlet-class>EditAccount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>Edit Account</servlet-name>
+        	<url-pattern>/EditAccount</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        	<servlet-name>Edit Blog</servlet-name>
+        	<servlet-class>EditBlog</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>Edit Blog</servlet-name>
+        	<url-pattern>/EditBlog</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        	<servlet-name>Edit Post</servlet-name>
+        	<servlet-class>EditPost</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>Edit Post</servlet-name>
+        	<url-pattern>/EditPost</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        	<servlet-name>View Blog</servlet-name>
+        	<servlet-class>ViewBlog</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>View Blog</servlet-name>
+        	<url-pattern>/ViewBlog</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        	<servlet-name>View Post</servlet-name>
+        	<servlet-class>ViewPost</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        	<servlet-name>View Post</servlet-name>
+        	<url-pattern>/ViewPost</url-pattern>
+	</servlet-mapping>
+</web-app>
